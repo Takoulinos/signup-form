@@ -1,0 +1,193 @@
+/*@font-face {
+    font-family: logoFont;
+    src: url(./Norse-Bold.otf);
+}*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    font-family: 'Oswald', 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+}
+
+.picture {
+    background-image: url(./takis.jpg);
+    background-size: 120% 120%;
+    background-position: right top;
+    flex: 1;
+}
+
+.content {
+    flex: 1.7;
+}
+
+.text {
+    height: 45%;
+    background-color: rgb(247, 240, 240);
+    padding-top: 175px;
+    padding-left: 80px;
+    padding-right: 250px;
+    overflow: auto;
+}
+
+.form {
+    height: 55%;
+    background-color: rgb(255, 253, 253);
+    padding-top: 30px;
+}
+
+.bold {
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 34px;
+    color: rgb(26, 12, 12);
+}
+
+form {
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-title {
+    width: 100%;
+    height: 15%;
+    margin-left: 80px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin-right: 50px;
+    height: 80px;
+    gap: 5px;
+    margin-left: 80px;
+}
+
+input {
+    background-color: #ffffff;
+    border: 1px solid #d6d9dc;
+    border-radius: 5px;
+    height: 38px;
+    padding: 7px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(27, 26, 26);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:focus {
+    border-color: blue;
+    background-color: beige;
+}
+
+input:placeholder-shown {
+    border-color: #d6d9dc;
+}
+
+
+label {
+    color: rgb(76, 76, 77);
+    letter-spacing: .2em;
+    font-weight: 500;
+}
+
+#line {
+    width: 100%;
+    height: 10px;
+    border: 1px solid rgba(37, 37, 37, 0);
+    box-shadow:0px 8px 5px -2px #6e6a6a;
+}
+
+#login {
+    margin-left: 80px;
+    margin-top: 165px;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 21px;
+    color: rgb(54, 54, 56);
+}
+
+a {
+    color: rgb(63, 30, 30);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    appearance: none;
+    width: 300px;
+    height: 65px;
+    margin-top: 60px;
+    margin-left: 80px;
+    background-color: rgb(63, 30, 30);
+    border-radius: 6px;
+    color: white;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 27px;
+    padding: 6px 16px;
+    font-weight: 600;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    border: 1px solid rgba(27, 31, 35, .15);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    /*position: relative;*/
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button[type="submit"]:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #5f3535;
+}
+
+button[type="submit"]:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+button[type="submit"]:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+button[type="submit"]:active {
+  background-color: #582d2d;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
