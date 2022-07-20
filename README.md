@@ -6,3 +6,6 @@ The form inputs behave as expexted according to their status.
 TO DO:
     -Add the logo
     -Add helpful messages when the user enters invalid inputs
+
+***20/07/2022***
+Added the logo.

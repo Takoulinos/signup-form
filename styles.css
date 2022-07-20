@@ -1,7 +1,7 @@
-/*@font-face {
+@font-face {
     font-family: logoFont;
     src: url(./Norse-Bold.otf);
-}*/
+}
 
 
 * {
@@ -188,6 +188,24 @@ button[type="submit"]:disabled {
 button[type="submit"]:active {
   background-color: #582d2d;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    top: 1%;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(14, 7, 7, 0.5);
+    font-family: logoFont;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1000%;
+}
+
+img {
+    height: 190px;
 }
 
 
